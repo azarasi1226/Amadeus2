@@ -5,29 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Amadeus.View"
         mc:Ignorable="d"
-        Title="MainV" Height="361" Width="210"
+        Title="MainV" Height="360" Width="208"
+        ResizeMode="NoResize" WindowStyle="None"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
         
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="{DynamicResource MaterialDesignFont}" ResizeMode="NoResize" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Window.Resources>
+        <Style x:Key="Button1" TargetType="Button" BasedOn="{StaticResource MaterialDesignFloatingActionMiniDarkButton}">
+            <Setter Property="Width" Value="38"/>
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="BorderBrush" Value="#607D8B"/>
+        </Style>
+        <Style x:Key="BIcon" TargetType="md:PackIcon">
+            <Setter Property="Width" Value="25"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <!--背景-->
-        <Image Source="/Amadeus;component/Asset/Image/StartUpTemplate.png"/>
-        
+        <Image Source="/Amadeus;component/Asset/Image/背景.png"/>
+       
+        <!--ニキシー管-->
+        <Border Background="Orange"
+                Height="50"
+                VerticalAlignment="Top" Margin="4 22 3, 3">
+            <TextBlock>
+                ニキシー管スペース
+            </TextBlock>
+        </Border>
         <!--立ち絵-->
-        <Image Source="/Amadeus;component/Asset/Image/kurisu_angry1.png" Margin="10,100,0,10"></Image>
+        <Image x:Name="StandingPic"
+               Source="/Amadeus;component/Asset/Image/kurisu_angry1.png" 
+               Margin="4,80,3,3"/>
+
         <!--利確ボタン-->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
                     Height="30"
                     VerticalAlignment="Top" Margin="0 100">
             <Button Width="80" Height="30"
                     Margin="5 0"
-                    BorderThickness="0">
+                    BorderThickness="0"
+                    >
                 <Button.Background>
                     <ImageBrush ImageSource="/Amadeus;component/Asset/Image/okabeButon.png"/>
                 </Button.Background>
@@ -41,6 +68,67 @@
                 </Button.Background>
             </Button>
         </StackPanel>
-            
+
+        
+        <!--操作ボタン郡-->
+        <Grid Height="80"
+              VerticalAlignment="Bottom"
+              Margin="4 0 3 50">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!--スクリーンショット-->
+            <Button Grid.Row="0" Grid.Column="3"
+                     Style="{StaticResource Button1}"
+                    Background="#55EC407A">
+                <md:PackIcon Kind="MonitorScreenshot" 
+                             Style="{StaticResource BIcon}"/>
+            </Button>
+            <!--シャットダウン-->
+            <Button Grid.Row="1" Grid.Column="0"
+                     Style="{StaticResource Button1}"
+                     Background="#55ffee58">
+                <md:PackIcon Kind="Power" 
+                             Style="{StaticResource BIcon}"/>
+            </Button>
+            <!--縮小-->
+            <Button Grid.Row="2" Grid.Column="1"
+                    Style="{StaticResource Button1}"
+                    Background="#55bdbdbd">
+                <md:PackIcon Kind="Resize" 
+                             Style="{StaticResource BIcon}"/>
+            </Button>
+            <!--履歴-->
+            <Button Grid.Row="2" Grid.Column="2"
+                     Style="{StaticResource Button1}"
+                    Background="#5529b6f6">
+                <md:PackIcon Kind="QueryBuilder"
+                             Style="{StaticResource BIcon}"/>
+
+            </Button>
+            <!--設定-->
+            <Button Grid.Row="2" Grid.Column="3"
+                     Style="{StaticResource Button1}"
+                    Background="#554caf50">
+                <md:PackIcon Kind="Settings" 
+                             Style="{StaticResource BIcon}"/>
+            </Button>
+        </Grid>
+
+        <!--テキストエリア-->
+        <Border Background="#BB757575"
+                VerticalAlignment="Bottom"
+                Height="50" Margin="4 3 3 3">
+            <TextBlock Foreground="White">
+                楽しいね本乙に
+            </TextBlock>
+        </Border>
     </Grid>
 </Window>

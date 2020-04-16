@@ -19,8 +19,8 @@ namespace AmadeusController
         {
             AllocConsole();
             //イベント登録
-            events[0] = new EventWaitHandle(false, EventResetMode.AutoReset, "test_event_pokemon_go");
-            events[1] = new EventWaitHandle(false, EventResetMode.AutoReset, "test_event_pokemon_gogo");
+            events[0] = new EventWaitHandle(false, EventResetMode.AutoReset, "全通貨決済");
+            events[1] = new EventWaitHandle(false, EventResetMode.AutoReset, "現通貨決済");
         }
 
         /// <summary>
@@ -36,11 +36,10 @@ namespace AmadeusController
             Task.Run(() => {
                 while (true)
                 {
-                    Console.WriteLine("ループ");
                     switch (EventWaitHandle.WaitAny(events, 1000, false))
                     {
-                        case 0: eventQ.Enqueue("楽しいね"); break;
-                        case 1: eventQ.Enqueue("fuck"); break;
+                        case 0: eventQ.Enqueue("全通貨決済"); break;
+                        case 1: eventQ.Enqueue("現通貨決済"); break;
                         default: Console.WriteLine("タイムアウト"); break;
                     }
 
@@ -54,23 +53,23 @@ namespace AmadeusController
         }
 
         /// <summary>
-        /// amadeusが終了しているか
+        /// Amadeusが終了しているか
         /// </summary>
-        /// <param name="param"></param>
+        /// <returns>終了フラグ</returns>
         public static bool CheckExit()
         {
             return amadeus.HasExited;
         }
 
         /// <summary>
-        /// AmadeusからのイベントをMQL側に通知
+        /// 溜まっているイベントを一つ取り出す
         /// </summary>
-        /// <param name="param"></param>
+        /// <returns>イベントメッセージ(無いときは空文字を返却)</returns>
         public static string CheckEvent()
         {
             //イベントがない場合はリターン
             if (eventQ.Count == 0)
-                return "";
+                return string.Empty;
 
             return eventQ.Dequeue();
         }

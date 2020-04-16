@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Windows;
 
 namespace Amadeus.View
@@ -33,9 +34,35 @@ namespace Amadeus.View
             }
         }
 
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            using (EventWaitHandle ewh = EventWaitHandle.OpenExisting("全通貨決済"))
+            {
+
+                // イベント通知
+                ewh.Set();
+            }
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            using (EventWaitHandle ewh = EventWaitHandle.OpenExisting("現通貨決済"))
+            {
+
+                // イベント通知
+                ewh.Set();
+            }
+        }
+
         private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            DragMove();
+            this.DragMove();
         }
     }
 }

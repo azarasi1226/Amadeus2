@@ -123,6 +123,12 @@
   <ItemGroup>
     <Resource Include="Asset\Image\kurisu_angry1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\Image\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\Image\背景.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.3.1.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.1.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
