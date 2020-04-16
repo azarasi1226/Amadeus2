@@ -13,3 +13,10 @@ S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus.csproj.
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus.csproj.CoreCompileInputs.cache
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus.exe
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus.pdb
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\MaterialDesignColors.dll
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\MaterialDesignThemes.Wpf.dll
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\MaterialDesignColors.pdb
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\MaterialDesignThemes.Wpf.pdb
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\MaterialDesignThemes.Wpf.xml
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\App.baml
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus.csproj.CopyComplete
