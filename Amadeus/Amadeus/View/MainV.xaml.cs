@@ -12,6 +12,7 @@ namespace Amadeus.View
         public MainV()
         {
             InitializeComponent();
+            DataContext = new ViewModel.MainVM();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -32,12 +33,6 @@ namespace Amadeus.View
                 // イベント通知
                 ewh.Set();
             }
-        }
-
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -63,6 +58,11 @@ namespace Amadeus.View
         private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             this.DragMove();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

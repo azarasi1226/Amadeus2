@@ -1,7 +1,6 @@
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\Amadeus.exe.config
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\Amadeus.exe
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\Amadeus.pdb
-S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus.csprojAssemblyReference.cache
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\View\MainV.g.cs
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\App.g.cs
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus_MarkupCompile.cache
@@ -20,3 +19,6 @@ S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\MaterialDesignT
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\MaterialDesignThemes.Wpf.xml
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\App.baml
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus.csproj.CopyComplete
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\View\Control\NixieTubeMeter.g.cs
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\View\Control\NixieTubeMeter.baml
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\GeneratedInternalTypeHelper.g.cs

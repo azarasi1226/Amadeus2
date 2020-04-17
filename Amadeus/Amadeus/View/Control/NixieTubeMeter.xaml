@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Amadeus.View.Control.NixieTubeMeter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Amadeus.View.Control"
+             mc:Ignorable="d" 
+             d:DesignHeight="80" d:DesignWidth="220">
+    <!--#region スタイル定義-->
+    <UserControl.Resources>
+        <!--ニキシー管-->
+        <Style x:Key="NixieTubeImage" TargetType="Image">
+            <Setter Property="Stretch" Value="Fill"/>
+            <Setter Property="Margin" Value="1 5 1 0 "/>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid x:Name="_meter">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.92*"/>
+            <RowDefinition Height="0.08*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Grid.Column="0"
+               Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
+               Style="{StaticResource NixieTubeImage}"/>
+        <Image Grid.Row="0" Grid.Column="1" 
+               Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
+               Style="{StaticResource NixieTubeImage}"/>
+        <Image Grid.Row="0" Grid.Column="2" 
+               Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
+               Style="{StaticResource NixieTubeImage}"/>
+        <Image Grid.Row="0" Grid.Column="3" 
+               Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
+               Style="{StaticResource NixieTubeImage}"/>
+        <Image Grid.Row="0" Grid.Column="4" 
+               Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
+               Style="{StaticResource NixieTubeImage}"/>
+        <Image Grid.Row="0" Grid.Column="5" 
+               Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
+               Style="{StaticResource NixieTubeImage}"/>
+        <Image Grid.Row="0" Grid.Column="6"
+               Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
+               Style="{StaticResource NixieTubeImage}"/>
+        <Image Grid.Row="0" Grid.Column="7" 
+               Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
+               Style="{StaticResource NixieTubeImage}"/>
+
+        <!--土台-->
+        <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="8"
+               Source="/Amadeus;component/Asset/Image/NixieTube/nixie_base.png"
+               Stretch="Fill"/>
+    </Grid>
+</UserControl>
