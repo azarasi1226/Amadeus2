@@ -22,3 +22,4 @@ S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus.csproj.
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\View\Control\NixieTubeMeter.g.cs
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\View\Control\NixieTubeMeter.baml
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\GeneratedInternalTypeHelper.g.cs
+S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus.csprojAssemblyReference.cache

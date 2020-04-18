@@ -31,27 +31,35 @@
             <RowDefinition Height="0.08*"/>
         </Grid.RowDefinitions>
         <Image Grid.Row="0" Grid.Column="0"
+               x:Name="_nixieTubeIMG1"
                Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
                Style="{StaticResource NixieTubeImage}"/>
         <Image Grid.Row="0" Grid.Column="1" 
+               x:Name="_nixieTubeIMG2"
                Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
                Style="{StaticResource NixieTubeImage}"/>
         <Image Grid.Row="0" Grid.Column="2" 
+               x:Name="_nixieTubeIMG3"
                Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
                Style="{StaticResource NixieTubeImage}"/>
         <Image Grid.Row="0" Grid.Column="3" 
+               x:Name="_nixieTubeIMG4"
                Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
                Style="{StaticResource NixieTubeImage}"/>
         <Image Grid.Row="0" Grid.Column="4" 
+               x:Name="_nixieTubeIMG5"
                Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
                Style="{StaticResource NixieTubeImage}"/>
         <Image Grid.Row="0" Grid.Column="5" 
+               x:Name="_nixieTubeIMG6"
                Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
                Style="{StaticResource NixieTubeImage}"/>
         <Image Grid.Row="0" Grid.Column="6"
+               x:Name="_nixieTubeIMG7"
                Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
                Style="{StaticResource NixieTubeImage}"/>
-        <Image Grid.Row="0" Grid.Column="7" 
+        <Image Grid.Row="0" Grid.Column="7"
+               x:Name="_nixieTubeIMG8"
                Source="/Amadeus;component/Asset/Image/NixieTube/nixie_none.png"
                Style="{StaticResource NixieTubeImage}"/>
 

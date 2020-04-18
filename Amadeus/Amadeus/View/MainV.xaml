@@ -47,7 +47,7 @@
         <!--スクリーン部-->
         <Grid Margin="4 22 3 3">
             <!--ニキシー管-->
-            <uc:NixieTubeMeter Height="55"
+            <uc:NixieTubeMeter x:Name="_nixieTubeMeter" Height="55"
                                VerticalAlignment="Top"/>
             <!--立ち絵-->
             <Image x:Name="Chris" Source="/Amadeus;component/Asset/Image/kurisu_angry1.png" 
@@ -85,7 +85,7 @@
                 </Grid>
 
                 <Button Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2"
-                    Style="{StaticResource EnterButton}" Margin="5,6,5,7">
+                    Style="{StaticResource EnterButton}" Margin="5,6,5,7" Click="Button_Click_5">
                     全通貨決済
                 </Button>
                 <!--スクリーンショット-->
@@ -136,6 +136,7 @@
                            Padding="2 3 0 5"
                            LineStackingStrategy="BlockLineHeight" LineHeight="14"
                            FontFamily="メイリオ" FontSize="12" TextWrapping="Wrap">
+                    ここにはいろいろな情報が表示されるよた英だよあああああああまんじまんじまんじ
                 </TextBlock>
             </Border>
         </Grid>
