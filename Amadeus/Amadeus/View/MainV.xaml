@@ -8,6 +8,7 @@
         mc:Ignorable="d"
         Height="380" Width="220"
         ResizeMode="NoResize" WindowStyle="None"
+        Topmost="True"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -64,10 +65,11 @@
                     <RowDefinition Height="45px"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="54*"/>
+                    <ColumnDefinition Width="53*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="43*"/>
+                    <ColumnDefinition Width="53*"/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
                     <ComboBox Width="60" Height="33"
@@ -84,43 +86,43 @@
                     </Button>
                 </Grid>
 
-                <Button Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2"
+                <Button Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3"
                     Style="{StaticResource EnterButton}" Margin="5,6,5,7" Click="Button_Click_5">
                     全通貨決済
                 </Button>
                 <!--スクリーンショット-->
-                <Button Grid.Row="2" Grid.Column="3"
+                <Button Grid.Row="2" Grid.Column="4"
                      Style="{StaticResource OperationButton}"
-                    Background="#55EC407A" Margin="6,3,7,2">
+                    Background="#55EC407A" Margin="7,4,8,3">
                     <md:PackIcon Kind="PhotoCamera" 
                              Style="{StaticResource BIcon}"/>
                 </Button>
                 <!--シャットダウン-->
                 <Button Grid.Row="3" Grid.Column="0"
                      Style="{StaticResource OperationButton}"
-                     Background="#55ffee58" Click="Button_Click_4" Margin="7,2,7,3">
+                     Background="#55ffee58" Click="Shutdown_Click" Margin="8,3,8,4">
                     <md:PackIcon Kind="Power" 
                              Style="{StaticResource BIcon}"/>
                 </Button>
                 <!--縮小-->
                 <Button Grid.Row="3" Grid.Column="1"
                     Style="{StaticResource OperationButton}"
-                    Background="#55bdbdbd" Margin="6,2,7,3">
+                    Background="#55bdbdbd" Margin="7,3,8,4">
                     <md:PackIcon Kind="Resize" 
                              Style="{StaticResource BIcon}"/>
                 </Button>
                 <!--履歴-->
                 <Button Grid.Row="3" Grid.Column="2"
                      Style="{StaticResource OperationButton}"
-                    Background="#5529b6f6" Margin="7,2,6,3">
+                    Background="#5529b6f6" Margin="8,3,7,4" Grid.ColumnSpan="2">
                     <md:PackIcon Kind="ChartBar"
                              Style="{StaticResource BIcon}"/>
 
                 </Button>
                 <!--設定-->
-                <Button Grid.Row="4" Grid.Column="3"
+                <Button Grid.Row="3" Grid.Column="4"
                      Style="{StaticResource OperationButton}"
-                    Background="#554caf50" Margin="6,2,7,3">
+                    Background="#554caf50" Margin="7,3,8,4">
                     <md:PackIcon Kind="SettingsOutline" 
                              Style="{StaticResource BIcon}"/>
                 </Button>

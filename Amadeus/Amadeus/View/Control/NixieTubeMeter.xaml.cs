@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 
@@ -10,7 +7,13 @@ namespace Amadeus.View.Control
 {
     public partial class NixieTubeMeter : UserControl
     {
+        /// <summary>
+        /// 画像データを保持した辞書
+        /// </summary>
         private readonly Dictionary<NixieTubeType, BitmapImage> _nixieTubeImages;
+        /// <summary>
+        /// ニキシー管配列
+        /// </summary>
         private readonly Image[] _nixieTubeIMGs;
 
         public NixieTubeMeter()
@@ -46,20 +49,50 @@ namespace Amadeus.View.Control
                 [NixieTubeType.minus] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_0.png", UriKind.Relative)),
             };
         }
-
-        public void SetNumber(double profitAndLoss)
+        
+        /// <summary>
+        /// メーターをリセット
+        /// </summary>
+        private void ResetMeter()
         {
-            //メーター初期化
-            foreach(var nixieTubeIMG in _nixieTubeIMGs)
+            foreach (var nixieTubeIMG in _nixieTubeIMGs)
             {
                 nixieTubeIMG.Source = _nixieTubeImages[NixieTubeType.none];
             }
+        }
+
+        /// <summary>
+        /// メーターにエラーを表示
+        /// </summary>
+        public void ShowError()
+        {
+            ResetMeter();
+
+            _nixieTubeIMGs[4].Source = _nixieTubeImages[NixieTubeType.dot];
+            _nixieTubeIMGs[3].Source = _nixieTubeImages[NixieTubeType.dot];
+            _nixieTubeIMGs[2].Source = _nixieTubeImages[NixieTubeType.dot];
+            _nixieTubeIMGs[1].Source = _nixieTubeImages[NixieTubeType.dot];
+            _nixieTubeIMGs[0].Source = _nixieTubeImages[NixieTubeType.dot];
+        }
+
+        /// <summary>
+        /// メーターに数字を表示
+        /// </summary>
+        /// <param name="profitAndLoss">表示したい損益</param>
+        public void ShowNumber(double profitAndLoss)
+        {
+            ResetMeter();
 
             //小数点第一位まで四捨五入し、文字列に置換
             var sign = profitAndLoss < 0 ? "-" : "+";
             var show = sign + Math.Round(profitAndLoss, 1, MidpointRounding.AwayFromZero);
 
-            //ニキシー管メーターの表示限界に達している場合スキップ
+            //ニキシー管メーターの表示限界に達している場合エラー
+            if (_nixieTubeIMGs.Length < show.Length)
+            {
+                ShowError();
+                return;
+            }
 
             //表示
             for (int i=0; i<show.Length; i++)
@@ -100,6 +133,9 @@ namespace Amadeus.View.Control
 
     }
 
+    /// <summary>
+    /// ニキシー管に表示する画像の種類
+    /// </summary>
     public enum NixieTubeType
     {
         zero,

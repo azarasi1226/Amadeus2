@@ -60,19 +60,19 @@ namespace Amadeus.View
             this.DragMove();
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            _nixieTubeMeter.SetNumber(1);
-        }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            _nixieTubeMeter.SetNumber(new Random().NextDouble() + new Random().Next(3030)) ;
+            _nixieTubeMeter.ShowNumber(new Random().NextDouble() + new Random().Next(3030)) ;
+        }
+
+        /// <summary>
+        /// シャットダウンボタン押下
+        /// </summary>
+        private void Shutdown_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
