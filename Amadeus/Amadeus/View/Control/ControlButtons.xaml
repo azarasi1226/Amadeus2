@@ -36,41 +36,42 @@
         </Grid.ColumnDefinitions>
         <!--スクリーンショット-->
         <Button Grid.Row="0" Grid.Column="3"
-                            Style="{StaticResource OperationButton}"
-                            Background="#55EC407A">
+                Click="Screenshots_Click"
+                Style="{StaticResource OperationButton}"
+                Background="#55EC407A">
             <md:PackIcon Kind="PhotoCamera" 
-                                     Style="{StaticResource BIcon}"/>
+                         Style="{StaticResource BIcon}"/>
         </Button>
         <!--シャットダウン-->
         <Button Grid.Row="1" Grid.Column="0"
-                            Click="Shutdown_Click"
-                            Style="{StaticResource OperationButton}"
-                            Background="#55ffee58">
+                Click="Shutdown_Click"
+                Style="{StaticResource OperationButton}"
+                Background="#55ffee58">
             <md:PackIcon Kind="Power" 
-                                     Style="{StaticResource BIcon}"/>
+                         Style="{StaticResource BIcon}"/>
         </Button>
         <!--縮小-->
         <Button Grid.Row="1" Grid.Column="1"
-                            Style="{StaticResource OperationButton}"
-                            Background="#55bdbdbd" Click="Button_Click_1">
+                Click="Expand_Click"
+                Style="{StaticResource OperationButton}"
+                Background="#55bdbdbd">
             <md:PackIcon Kind="ArrowExpand"
-                                     Style="{StaticResource BIcon}"/>
+                         Style="{StaticResource BIcon}"/>
         </Button>
         <!--履歴-->
         <Button Grid.Row="1" Grid.Column="2"
-                             Click="Button_Click_5"
-                            Style="{StaticResource OperationButton}"
-                            Background="#5529b6f6">
+                Click="Button_Click_5"
+                Style="{StaticResource OperationButton}"
+                Background="#5529b6f6">
             <md:PackIcon Kind="ChartBar"
-                                     Style="{StaticResource BIcon}"/>
-
+                         Style="{StaticResource BIcon}"/>
         </Button>
         <!--設定-->
         <Button Grid.Row="1" Grid.Column="3"
-                            Style="{StaticResource OperationButton}"
-                            Background="#554caf50">
+                Style="{StaticResource OperationButton}"
+                Background="#554caf50">
             <md:PackIcon Kind="SettingsOutline" 
-                                     Style="{StaticResource BIcon}"/>
+                         Style="{StaticResource BIcon}"/>
         </Button>
     </Grid>
 </UserControl>

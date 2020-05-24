@@ -3,3 +3,8 @@ S:\Development\WorkSpace\C#\Amadeus V1\AmadeusController\AmadeusController\bin\D
 S:\Development\WorkSpace\C#\Amadeus V1\AmadeusController\AmadeusController\obj\Debug\AmadeusController.csproj.CoreCompileInputs.cache
 S:\Development\WorkSpace\C#\Amadeus V1\AmadeusController\AmadeusController\obj\Debug\AmadeusController.dll
 S:\Development\WorkSpace\C#\Amadeus V1\AmadeusController\AmadeusController\obj\Debug\AmadeusController.pdb
+S:\Development\WorkSpace\C#\AmadeusC-\AmadeusController\AmadeusController\bin\Debug\AmadeusController.dll
+S:\Development\WorkSpace\C#\AmadeusC-\AmadeusController\AmadeusController\bin\Debug\AmadeusController.pdb
+S:\Development\WorkSpace\C#\AmadeusC-\AmadeusController\AmadeusController\obj\Debug\AmadeusController.csproj.CoreCompileInputs.cache
+S:\Development\WorkSpace\C#\AmadeusC-\AmadeusController\AmadeusController\obj\Debug\AmadeusController.dll
+S:\Development\WorkSpace\C#\AmadeusC-\AmadeusController\AmadeusController\obj\Debug\AmadeusController.pdb

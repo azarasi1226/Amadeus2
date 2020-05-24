@@ -14,7 +14,7 @@ namespace Amadeus.View
         }
 
         /// <summary>
-        /// マウスドラッグに対応
+        /// ウィンドウのドラッグ移動に対応
         /// </summary>
         private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
