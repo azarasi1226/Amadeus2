@@ -60,7 +60,6 @@
         </Button>
         <!--履歴-->
         <Button Grid.Row="1" Grid.Column="2"
-                Click="Button_Click_5"
                 Style="{StaticResource OperationButton}"
                 Background="#5529b6f6">
             <md:PackIcon Kind="ChartBar"

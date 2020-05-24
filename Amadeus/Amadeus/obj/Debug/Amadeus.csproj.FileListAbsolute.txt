@@ -53,4 +53,6 @@ S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\Con
 S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\ControlButtons.baml
 S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\SettlementButtons.g.cs
 S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\SettlementButtons.baml
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\Controller.dll
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\Controller.pdb
 S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus.csprojAssemblyReference.cache

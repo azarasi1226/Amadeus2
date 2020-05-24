@@ -19,7 +19,7 @@ namespace Amadeus.View.Control
         /// </summary>
         private void Screenshots_Click(object sender, RoutedEventArgs e)
         {
-            Parent._textArea.SetText("スクリーンショットを撮影しました。");
+            Parent._textArea.SetText(Controller.NotificationEvent.全通貨決済.ToString());
         }
 
         /// <summary>
@@ -58,7 +58,7 @@ namespace Amadeus.View.Control
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            using (EventWaitHandle ewh = EventWaitHandle.OpenExisting("test_event_pokemon_go"))
+            using (EventWaitHandle ewh = EventWaitHandle.OpenExisting(Controller.NotificationEvent.全通貨決済.ToString()))
             {
 
                 // イベント通知
