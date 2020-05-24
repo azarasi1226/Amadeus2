@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\
 Amadeus
 none
 false
 DEBUG;TRACE
-S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\App.xaml
-21728606321
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\App.xaml
+5477901043
 
-82005931600
-15-966248521
-View\Control\NixieTubeMeter.xaml;View\MainV.xaml;
+12100549814
+17-970752693
+View\Control\ControlButtons.xaml;View\Control\NixieTubeMeter.xaml;View\Control\SettlementButtons.xaml;View\Control\TextArea.xaml;View\MainV.xaml;
 
 False
 

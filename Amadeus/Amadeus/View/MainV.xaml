@@ -3,144 +3,71 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Amadeus.View"
+        xmlns:vm="clr-namespace:Amadeus.ViewModel"
         xmlns:uc="clr-namespace:Amadeus.View.Control"
         mc:Ignorable="d"
-        Height="380" Width="220"
-        ResizeMode="NoResize" WindowStyle="None"
+        Height="380" Width="Auto"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        SizeToContent="Width"
         Topmost="True"
+        AllowsTransparency="True"
+        Background="Transparent"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         
-        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
-        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        TextElement.FontWeight="Regular"
-        TextElement.FontSize="13"
-        TextOptions.TextFormattingMode="Ideal"
-        TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="{DynamicResource MaterialDesignFont}">
-    <Window.Resources>
-        <!--#region スタイル定義-->
-        <!--利確ボタン-->
-        <Style x:Key="EnterButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
-            <Setter Property="Margin" Value="5"/>
-            <Setter Property="Padding" Value="0"/>
-        </Style>
-        <!--操作ボタン-->
-        <Style x:Key="OperationButton" TargetType="Button" BasedOn="{StaticResource MaterialDesignFloatingActionMiniDarkButton}">
-            <Setter Property="Width" Value="38"/>
-            <Setter Property="Height" Value="38"/>
-            <Setter Property="Padding" Value="0"/>
-            <Setter Property="BorderBrush" Value="#607D8B"/>
-            <Setter Property="Foreground" Value="White"/>
-        </Style>
-        <!--操作ボタンアイコン-->
-        <Style x:Key="BIcon" TargetType="md:PackIcon">
-            <Setter Property="Width" Value="27"/>
-            <Setter Property="Height" Value="27"/>
-        </Style>
-        <!--#endregion-->
-    </Window.Resources>
-    <Grid>
-        <!--背景-->
-        <Image Source="/Amadeus;component/Asset/Image/背景.png" Stretch="Fill"/>
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Window.DataContext>
+        <vm:MainVM x:Name="_vm"/>
+    </Window.DataContext>
 
-        <!--スクリーン部-->
-        <Grid Margin="4 22 3 3">
-            <!--ニキシー管-->
-            <uc:NixieTubeMeter x:Name="_nixieTubeMeter" Height="55"
-                               VerticalAlignment="Top"/>
-            <!--立ち絵-->
-            <Image x:Name="Chris" Source="/Amadeus;component/Asset/Image/kurisu_angry1.png" 
-                   Height="300"
-                   VerticalAlignment="Bottom"/>
+    <StackPanel Orientation="Horizontal">
+        <!--メイン画面-->
+        <Grid Panel.ZIndex="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Amadeus;component/Asset/Image/背景.png"/>
+            </Grid.Background>
 
-            <!--操作ボタン郡-->
-            <Grid VerticalAlignment="Bottom"
-                  Margin="0 60">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="45px"/>
-                    <RowDefinition Height="100px"/>
-                    <RowDefinition Height="45px"/>
-                    <RowDefinition Height="45px"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="54*"/>
-                    <ColumnDefinition Width="53*"/>
-                    <ColumnDefinition Width="10*"/>
-                    <ColumnDefinition Width="43*"/>
-                    <ColumnDefinition Width="53*"/>
-                </Grid.ColumnDefinitions>
-                <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
-                    <ComboBox Width="60" Height="33"
-                          HorizontalAlignment="Left" ItemsSource="{Binding CurrencyPair}"
-                          SelectedIndex="1"
-                          Foreground="Black"
-                          Background="#22FFFFFF">
+            <!--スクリーン部-->
+            <Grid Margin="4 22 3 3">
+                <!--立ち絵-->
+                <Image x:Name="Chris" Source="/Amadeus;component/Asset/Image/kurisu_angry1.png" 
+                       Height="300"
+                       VerticalAlignment="Bottom"/>
 
-                    </ComboBox>
-                    <Button HorizontalAlignment="Right"
-                    Style="{StaticResource EnterButton}"
-                        Width="42" Background="#FF686868">
-                        決済
-                    </Button>
-                </Grid>
+                <!--ニキシー管-->
+                <uc:NixieTubeMeter x:Name="_nixieTubeMeter"
+                                   Height="55"
+                                   VerticalAlignment="Top"/>
 
-                <Button Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3"
-                    Style="{StaticResource EnterButton}" Margin="5,6,5,7" Click="Button_Click_5">
-                    全通貨決済
-                </Button>
-                <!--スクリーンショット-->
-                <Button Grid.Row="2" Grid.Column="4"
-                     Style="{StaticResource OperationButton}"
-                    Background="#55EC407A" Margin="7,4,8,3">
-                    <md:PackIcon Kind="PhotoCamera" 
-                             Style="{StaticResource BIcon}"/>
-                </Button>
-                <!--シャットダウン-->
-                <Button Grid.Row="3" Grid.Column="0"
-                     Style="{StaticResource OperationButton}"
-                     Background="#55ffee58" Click="Shutdown_Click" Margin="8,3,8,4">
-                    <md:PackIcon Kind="Power" 
-                             Style="{StaticResource BIcon}"/>
-                </Button>
-                <!--縮小-->
-                <Button Grid.Row="3" Grid.Column="1"
-                    Style="{StaticResource OperationButton}"
-                    Background="#55bdbdbd" Margin="7,3,8,4">
-                    <md:PackIcon Kind="Resize" 
-                             Style="{StaticResource BIcon}"/>
-                </Button>
-                <!--履歴-->
-                <Button Grid.Row="3" Grid.Column="2"
-                     Style="{StaticResource OperationButton}"
-                    Background="#5529b6f6" Margin="8,3,7,4" Grid.ColumnSpan="2">
-                    <md:PackIcon Kind="ChartBar"
-                             Style="{StaticResource BIcon}"/>
+                <!--決済ボタン-->
+                <uc:SettlementButtons x:Name="_settlementButtons"
+                                      Height="35"
+                                      VerticalAlignment="Top"
+                                      Margin="0 55 0 0"/>
 
-                </Button>
-                <!--設定-->
-                <Button Grid.Row="3" Grid.Column="4"
-                     Style="{StaticResource OperationButton}"
-                    Background="#554caf50" Margin="7,3,8,4">
-                    <md:PackIcon Kind="SettingsOutline" 
-                             Style="{StaticResource BIcon}"/>
-                </Button>
+                <!--操作ボタン郡-->
+                <uc:ControlButtons x:Name="_controlButtons"
+                                   Height="90"
+                                   VerticalAlignment="Bottom"
+                                   Margin="0 0 0 60"/>
+
+                <!--テキストエリア-->
+                <uc:TextArea x:Name="_textArea"
+                             Height="60"
+                             VerticalAlignment="Bottom"/>
             </Grid>
-
-            <!--テキストエリア-->
-            <Border Height="60"
-                    VerticalAlignment="Bottom">
-                <Border.Background>
-                    <ImageBrush ImageSource="/Amadeus;component/Asset/Image/subtitle_frame_big.png"/>
-                </Border.Background>
-                <TextBlock Foreground="White"
-                           Padding="2 3 0 5"
-                           LineStackingStrategy="BlockLineHeight" LineHeight="14"
-                           FontFamily="メイリオ" FontSize="12" TextWrapping="Wrap">
-                    ここにはいろいろな情報が表示されるよた英だよあああああああまんじまんじまんじ
-                </TextBlock>
-            </Border>
         </Grid>
-    </Grid>
+
+        <!--サブ画面-->
+        <md:TransitioningContent x:Name="SubOpenEffect"
+                                 OpeningEffect="{md:TransitionEffect SlideInFromLeft, Duration=0:0:0:0.5}"
+                                 Panel.ZIndex="0">
+            <Grid x:Name="_subScreen"
+              Height="358"
+              VerticalAlignment="Bottom"
+              Visibility="{Binding IsSubScreen, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <Image Source="/Amadeus;component/Asset/Image/SubBackground.png" />
+            </Grid>
+        </md:TransitioningContent>
+    </StackPanel>
 </Window>

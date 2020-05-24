@@ -11,6 +11,7 @@ namespace Amadeus.View.Control
         /// 画像データを保持した辞書
         /// </summary>
         private readonly Dictionary<NixieTubeType, BitmapImage> _nixieTubeImages;
+
         /// <summary>
         /// ニキシー管配列
         /// </summary>
@@ -34,24 +35,24 @@ namespace Amadeus.View.Control
 
             _nixieTubeImages = new Dictionary<NixieTubeType, BitmapImage>{
                 [NixieTubeType.zero]  = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_0.png", UriKind.Relative)),
-                [NixieTubeType.one] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_1.png", UriKind.Relative)),
-                [NixieTubeType.two] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_2.png", UriKind.Relative)),
+                [NixieTubeType.one]   = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_1.png", UriKind.Relative)),
+                [NixieTubeType.two]   = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_2.png", UriKind.Relative)),
                 [NixieTubeType.three] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_3.png", UriKind.Relative)),
-                [NixieTubeType.four] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_4.png", UriKind.Relative)),
-                [NixieTubeType.five] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_5.png", UriKind.Relative)),
-                [NixieTubeType.six] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_6.png", UriKind.Relative)),
+                [NixieTubeType.four]  = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_4.png", UriKind.Relative)),
+                [NixieTubeType.five]  = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_5.png", UriKind.Relative)),
+                [NixieTubeType.six]   = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_6.png", UriKind.Relative)),
                 [NixieTubeType.seven] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_7.png", UriKind.Relative)),
                 [NixieTubeType.eight] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_8.png", UriKind.Relative)),
-                [NixieTubeType.nine] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_9.png", UriKind.Relative)),
-                [NixieTubeType.none] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_none.png", UriKind.Relative)),
-                [NixieTubeType.dot] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_dot.png", UriKind.Relative)),
-                [NixieTubeType.plus] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_0.png", UriKind.Relative)),
+                [NixieTubeType.nine]  = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_9.png", UriKind.Relative)),
+                [NixieTubeType.none]  = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_none.png", UriKind.Relative)),
+                [NixieTubeType.dot]   = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_dot.png", UriKind.Relative)),
+                [NixieTubeType.plus]  = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_0.png", UriKind.Relative)),
                 [NixieTubeType.minus] = new BitmapImage(new Uri(@"\Asset\Image\NixieTube\nixie_0.png", UriKind.Relative)),
             };
         }
         
         /// <summary>
-        /// メーターをリセット
+        /// メーターリセット
         /// </summary>
         private void ResetMeter()
         {
@@ -91,6 +92,7 @@ namespace Amadeus.View.Control
             if (_nixieTubeIMGs.Length < show.Length)
             {
                 ShowError();
+
                 return;
             }
 
@@ -130,7 +132,6 @@ namespace Amadeus.View.Control
                 }
             }
         }
-
     }
 
     /// <summary>
