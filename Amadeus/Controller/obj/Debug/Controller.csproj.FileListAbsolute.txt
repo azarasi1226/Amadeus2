@@ -1,0 +1,6 @@
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Controller\bin\Debug\Controller.dll
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Controller\bin\Debug\Controller.pdb
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Controller\obj\Debug\Controller.dll
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Controller\obj\Debug\Controller.pdb
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Controller\obj\Debug\Controller.csprojAssemblyReference.cache

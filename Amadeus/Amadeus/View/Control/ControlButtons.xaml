@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="Amadeus.View.Control.ControlButtons"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="200"
+             
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <UserControl.Resources>
+        <!--操作ボタン-->
+        <Style x:Key="OperationButton" TargetType="Button" BasedOn="{StaticResource MaterialDesignFloatingActionMiniDarkButton}">
+            <Setter Property="Width" Value="38"/>
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="BorderBrush" Value="#607D8B"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+        <!--操作ボタンアイコン-->
+        <Style x:Key="BIcon" TargetType="md:PackIcon">
+            <Setter Property="Width" Value="27"/>
+            <Setter Property="Height" Value="27"/>
+        </Style>
+    </UserControl.Resources>
+    <!--操作ボタン郡-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--スクリーンショット-->
+        <Button Grid.Row="0" Grid.Column="3"
+                Click="Screenshots_Click"
+                Style="{StaticResource OperationButton}"
+                Background="#55EC407A">
+            <md:PackIcon Kind="PhotoCamera" 
+                         Style="{StaticResource BIcon}"/>
+        </Button>
+        <!--シャットダウン-->
+        <Button Grid.Row="1" Grid.Column="0"
+                Click="Shutdown_Click"
+                Style="{StaticResource OperationButton}"
+                Background="#55ffee58">
+            <md:PackIcon Kind="Power" 
+                         Style="{StaticResource BIcon}"/>
+        </Button>
+        <!--縮小-->
+        <Button Grid.Row="1" Grid.Column="1"
+                Click="Expand_Click"
+                Style="{StaticResource OperationButton}"
+                Background="#55bdbdbd">
+            <md:PackIcon Kind="ArrowExpand"
+                         Style="{StaticResource BIcon}"/>
+        </Button>
+        <!--履歴-->
+        <Button Grid.Row="1" Grid.Column="2"
+                Style="{StaticResource OperationButton}"
+                Background="#5529b6f6">
+            <md:PackIcon Kind="ChartBar"
+                         Style="{StaticResource BIcon}"/>
+        </Button>
+        <!--設定-->
+        <Button Grid.Row="1" Grid.Column="3"
+                Style="{StaticResource OperationButton}"
+                Background="#554caf50">
+            <md:PackIcon Kind="SettingsOutline" 
+                         Style="{StaticResource BIcon}"/>
+        </Button>
+    </Grid>
+</UserControl>

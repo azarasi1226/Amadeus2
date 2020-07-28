@@ -23,3 +23,36 @@ S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\View\Control\Ni
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\View\Control\NixieTubeMeter.baml
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\GeneratedInternalTypeHelper.g.cs
 S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\obj\Debug\Amadeus.csprojAssemblyReference.cache
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\Amadeus.exe.config
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\Amadeus.exe
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\Amadeus.pdb
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\MaterialDesignColors.dll
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\MaterialDesignThemes.Wpf.dll
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\MaterialDesignColors.pdb
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\MaterialDesignThemes.Wpf.pdb
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\MaterialDesignThemes.Wpf.xml
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\NixieTubeMeter.g.cs
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\MainV.g.cs
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\App.g.cs
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\GeneratedInternalTypeHelper.g.cs
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus_MarkupCompile.cache
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus_MarkupCompile.lref
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\App.baml
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\NixieTubeMeter.baml
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\MainV.baml
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus.g.resources
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus.Properties.Resources.resources
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus.csproj.GenerateResource.cache
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus.csproj.CoreCompileInputs.cache
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus.csproj.CopyComplete
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus.exe
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus.pdb
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\TextArea.g.cs
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\TextArea.baml
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\ControlButtons.g.cs
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\ControlButtons.baml
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\SettlementButtons.g.cs
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\View\Control\SettlementButtons.baml
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\Controller.dll
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\Controller.pdb
+S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\obj\Debug\Amadeus.csprojAssemblyReference.cache

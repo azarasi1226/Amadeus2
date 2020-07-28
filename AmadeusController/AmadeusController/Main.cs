@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AmadeusController
 {
+    /// <summary>
+    /// ビルドしたらMQL5のDLL読み込みフォルダに移動！！！！
+    /// </summary>
     public class Main
     {
         [System.Runtime.InteropServices.DllImport("kernel32.dll")]
@@ -29,10 +32,11 @@ namespace AmadeusController
         public static void Show()
         {
             //Amadeus起動
-            amadeus.StartInfo.FileName = @"S:\Development\WorkSpace\C#\Amadeus V1\Amadeus\Amadeus\bin\Debug\Amadeus.exe";
+            amadeus.StartInfo.FileName = @"S:\Development\WorkSpace\C#\AmadeusC-\Amadeus\Amadeus\bin\Debug\Amadeus.exe";
             amadeus.Start();
 
             //非同期にしないとMQLのメソッド呼び出しで失敗する。
+            //※永遠に関数呼び出しから帰ってこれないから
             Task.Run(() => {
                 while (true)
                 {
