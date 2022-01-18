@@ -6,7 +6,7 @@ Windowsクライアントアプリの練習ついでにC#のWPFで作り直す�
 
 
 ## Image
-![トップ](./readme/main.png)
+![トップ](./README/main.png)
 
 ## 機能
 * [昔作った経済指標ビュアー](https://github.com/azarasi1226/keizaisihyou)と連携
